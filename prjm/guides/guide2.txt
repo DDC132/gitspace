@@ -1,0 +1,83 @@
+: nodejs guide :
+
+1. basics:
+
+    * variables:
+   
+        > description:
+            - variables are a type of value stored by a named container.
+       
+        > syntax:
+            - const a = b;
+            - let a = b;
+           
+        > syntax key:
+            - const: used to declare variable that are not going to changed
+            - let:  used to declare variable that are able to be changed
+            - a: is the variable name.
+            - b: is the stored value type.
+           
+        > primative values types:
+            - string( "hello"; ): are section of text usable for coding.
+            - integer( 23; ): are used for mainly mathematics.
+            - boolean( true; , false; ): are best used for decision making.
+            - undefined: is a variable that doesn't have a value.
+            - null( null; ): is a value that doesn't store anything
+        
+        > object value types:
+            - object( {name: "dan", age: 23}; ): stores value by name.
+            - array( [apple, peach, pineapple]; ): stores value by order 
+            - function: stores multiple lines of code
+                - const greet = function() {
+                        return "hello";
+                  };
+        
+        > implementation:
+            - syntax: ${a}
+            
+
+    * input and output:
+        
+        > description:
+            - there is a few ways to add input ranging from the terminal command line to spacific keypress
+       
+        > command line input:
+            - syntax:
+                - const argument = process.argv[2] || "Guest";
+           
+            - syntax key:
+                - const argument = : is the variable name.
+                - process.argv[2] : used to setup the CLI.
+                - || "guest"; : fall back setup for if nothing is entered.
+        
+        > readline input:
+            - syntax:
+                1 - import readline from 'node:readline/promises';
+                1 - import { stdin as input, stdout as output } from 'node:process';
+                
+                2 - async function main() {
+                3 -     const rl = createinterface({ input, output });
+                
+                4 -     const a = await rl.question('what is your name');
+
+                5 -     console.log( 'welcome ${a}.' );
+                6 -     rl.close();
+                2 - };
+
+                7 - main();
+
+            - syntax explaination:
+                - 1. this is where you import the module in.
+
+                - 2. this is where the main function starts.
+
+                - 3. this is the setup before use of the input.
+
+                - 4. this is the input variable with a prompt.
+
+                - 5. this is the input in used.
+
+                - 6. this is the input closing setup, used to close the program after finished.
+
+                - 7. this is used to execute the program on run.
+

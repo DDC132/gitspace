@@ -1,0 +1,24 @@
+: bash guide :
+  
+1. the basics: 
+    
+    * variable:
+      
+        > description:
+            - variables are a type of value stored by a named container.
+
+        > syntax:
+            a = b
+      
+        > syntax key:
+            - a: variable name
+            - b: variable value type
+      
+        > type of values:
+            - string( "hello world" ): string are text surounded by quotes.
+
+            - integer( {10} ): an intager is a number used in coding.
+
+            - floating integer( 5.3 ): a floating number is a decimal point number.
+            
+            - array( (apple pear orange) ): an array is a collection of values.
